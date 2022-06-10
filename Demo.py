@@ -1,10 +1,10 @@
-temp = 0
-total = 0
+phrase = input("Type a phrase: ")
+i = 0
 
-first_n = int(input("Input a range: "))
+print("Original String is", phrase)
+print("Printing only even index chars ")
 
-for i in range(first_n):
-    if i > 1:
-        temp = i - 1
-    total = i + temp
-    print("Current Number ", i , "Previous Number ", temp, "Sum: ", total)
+while i < len(phrase):
+    if i % 2 == 0:
+        print(phrase[i])
+    i = i + 1
