@@ -1,10 +1,15 @@
+def remove_chars(phrase, num):
+    p = phrase[num:]
+    return p
+
+        
+
+
 phrase = input("Type a phrase: ")
-i = 0
+num = int(input("enter niumber: "))
+
 
 print("Original String is", phrase)
-print("Printing only even index chars ")
 
-while i < len(phrase):
-    if i % 2 == 0:
-        print(phrase[i])
-    i = i + 1
+print(remove_chars(phrase, num))
+
