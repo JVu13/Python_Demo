@@ -1,8 +1,10 @@
-a = int(input("Input A: "))
-b = int(input("Input B: "))
-c = a * b
+temp = 0
+total = 0
 
-if c <= 1000:
-    print(c)
+first_n = int(input("Input a range: "))
 
-print(a+b)
+for i in range(first_n):
+    if i > 1:
+        temp = i - 1
+    total = i + temp
+    print("Current Number ", i , "Previous Number ", temp, "Sum: ", total)
