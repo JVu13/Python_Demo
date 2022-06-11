@@ -1,8 +1,10 @@
-numbers = [1,2,3,4,5,6,7]
+list1 = ["Hello ", "take "]
+list2 = ["Dear", "Sir"]
 
-squared = []
+new_list = []
 
-for i in range(len(numbers)):
-    squared.append(numbers[i]**2)
+for i in list1:
+    for j in list2:
+        new_list.append(i + j)
 
-print(squared)
+print (new_list)
