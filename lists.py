@@ -1,10 +1,7 @@
-list1 = ["Hello ", "take "]
-list2 = ["Dear", "Sir"]
-
-new_list = []
+list1 = ["mike", "","Emma","Kelly","","brad"]
 
 for i in list1:
-    for j in list2:
-        new_list.append(i + j)
+    if i == "":
+        list1.remove(i)
 
-print (new_list)
+print(list1)
